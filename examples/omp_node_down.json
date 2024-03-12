@@ -1,0 +1,56 @@
+{
+    "suppressed": true,
+    "message": "All OMP sessions for the node are down",
+    "values": [
+      {
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10",
+        "site-id": "10"
+      }
+    ],
+    "values_short_display": [
+      {
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10"
+      }
+    ],
+    "eventname": "rulename",
+    "rulename": "node_down",
+    "type": "node_down",
+    "component": "OMP",
+    "severity": "Critical",
+    "severity_number": 1,
+    "entry_time": 1709886381229,
+    "receive_time": 1709886352132,
+    "rule_name_display": "OMP_Node_Down",
+    "uuid": "1b5036bd-cce6-4621-9d52-d55b70b7bab8",
+    "active": true,
+    "acknowledged": false,
+    "possible_causes": [
+      "Trying to determine possible root causes"
+    ],
+    "suppressed_by": "{\"site-id\":\"10\",\"component\":\"OMP\"}",
+    "consumed_events": [
+      {
+        "eventname": "omp-peer-state-change",
+        "peer-new-state": "init",
+        "eventId": "9468345a-4cda-47d9-9d20-d604bb76c2de",
+        "builtBy": "EventDataCollector",
+        "component": "OMP",
+        "severity-level": "major",
+        "system-ip-in-vmanage": "1.1.10.1",
+        "entry_time": 1709886352083,
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10",
+        "peer": "1.1.0.2"
+      }
+    ],
+    "system_ip": "1.1.10.1",
+    "host_name": "BR10",
+    "site_id": "10",
+    "devices": [
+      {
+        "system-ip": "1.1.10.1"
+      }
+    ]
+  }

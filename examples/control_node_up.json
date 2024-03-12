@@ -1,0 +1,60 @@
+{
+    "suppressed": true,
+    "message": "Control connections for the node came up",
+    "values": [
+      {
+        "system-ip": "1.1.30.1",
+        "host-name": "Site300-cE1",
+        "site-id": "300"
+      }
+    ],
+    "values_short_display": [
+      {
+        "system-ip": "1.1.30.1",
+        "host-name": "Site300-cE1"
+      }
+    ],
+    "eventname": "rulename",
+    "rulename": "node_up",
+    "type": "node_up",
+    "component": "Control",
+    "severity": "Medium",
+    "severity_number": 3,
+    "entry_time": 1710144165272,
+    "receive_time": 1710144148981,
+    "rule_name_display": "Control_Node_Up",
+    "uuid": "e675c6e0-b7ee-4e6b-aec9-830c64ceb9e8",
+    "active": false,
+    "acknowledged": false,
+    "possible_causes": [
+      "Trying to determine possible root causes"
+    ],
+    "suppressed_by": "{\"site-id\":\"300\",\"component\":\"Control\"}",
+    "consumed_events": [
+      {
+        "eventname": "control-connection-state-change",
+        "new-state": "up",
+        "eventId": "5eb22666-1e90-42be-af14-6e459dcd35f0",
+        "builtBy": "EventDataCollector",
+        "component": "Control",
+        "severity-level": "major",
+        "vmanage-system-ip": "1.1.30.1",
+        "entry_time": 1710144148975,
+        "system-ip": "1.1.30.1",
+        "host-name": "Site300-cE1",
+        "personality": "vedge",
+        "src-color": "biz-internet",
+        "peer-system-ip": "1.1.1.1",
+        "peer-vmanage-system-ip": "1.1.1.1",
+        "remote-color": "default"
+      }
+    ],
+    "system_ip": "1.1.30.1",
+    "host_name": "Site300-cE1",
+    "site_id": "300",
+    "devices": [
+      {
+        "system-ip": "1.1.30.1"
+      }
+    ]
+  }

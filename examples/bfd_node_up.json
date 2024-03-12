@@ -1,0 +1,58 @@
+{
+    "suppressed": true,
+    "message": "BFD sessions for the node came up",
+    "values": [
+      {
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10",
+        "site-id": "10"
+      }
+    ],
+    "values_short_display": [
+      {
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10"
+      }
+    ],
+    "eventname": "rulename",
+    "rulename": "node_up",
+    "type": "node_up",
+    "component": "BFD",
+    "severity": "Medium",
+    "severity_number": 3,
+    "entry_time": 1709885795922,
+    "receive_time": 1709885779820,
+    "rule_name_display": "BFD_Node_Up",
+    "uuid": "0d0091b0-8624-41cc-9402-1ff752be9d02",
+    "active": false,
+    "acknowledged": false,
+    "possible_causes": [
+      "Trying to determine possible root causes"
+    ],
+    "suppressed_by": "{\"site-id\":\"10\",\"component\":\"BFD\"}",
+    "consumed_events": [
+      {
+        "eventname": "bfd-state-change",
+        "new-state": "up",
+        "eventId": "1b01024e-ae34-43e9-ad3a-876acac6a1c0",
+        "builtBy": "EventDataCollector",
+        "component": "BFD",
+        "severity-level": "major",
+        "system-ip-in-vmanage": "1.1.10.1",
+        "entry_time": 1709885779816,
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10",
+        "local-color": "biz-internet",
+        "remote-system-ip": "1.1.0.40",
+        "remote-color": "biz-internet"
+      }
+    ],
+    "system_ip": "1.1.10.1",
+    "host_name": "BR10",
+    "site_id": "10",
+    "devices": [
+      {
+        "system-ip": "1.1.10.1"
+      }
+    ]
+  }

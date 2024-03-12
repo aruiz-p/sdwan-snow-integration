@@ -1,0 +1,52 @@
+{
+    "suppressed": false,
+    "message": "BFD sessions for the site came up",
+    "values": [
+      {
+        "site-id": "10"
+      }
+    ],
+    "values_short_display": [
+      {
+        "site-id": "10"
+      }
+    ],
+    "eventname": "rulename",
+    "rulename": "site_up",
+    "type": "site_up",
+    "component": "BFD",
+    "severity": "Medium",
+    "severity_number": 3,
+    "entry_time": 1709885796093,
+    "receive_time": 1709885779820,
+    "rule_name_display": "BFD_Site_Up",
+    "uuid": "1ba4b82e-a912-4a86-b086-f6556c85a2d3",
+    "active": false,
+    "acknowledged": false,
+    "possible_causes": [
+      "Trying to determine possible root causes"
+    ],
+    "consumed_events": [
+      {
+        "eventname": "bfd-state-change",
+        "new-state": "up",
+        "eventId": "1b01024e-ae34-43e9-ad3a-876acac6a1c0",
+        "builtBy": "EventDataCollector",
+        "component": "BFD",
+        "severity-level": "major",
+        "system-ip-in-vmanage": "1.1.10.1",
+        "entry_time": 1709885779816,
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10",
+        "local-color": "biz-internet",
+        "remote-system-ip": "1.1.0.40",
+        "remote-color": "biz-internet"
+      }
+    ],
+    "site_id": "10",
+    "devices": [
+      {
+        "system-ip": "1.1.10.1"
+      }
+    ]
+  }

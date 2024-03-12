@@ -1,0 +1,49 @@
+{
+    "suppressed": false,
+    "message": "OMP sessions for the site came up",
+    "values": [
+      {
+        "site-id": "10"
+      }
+    ],
+    "values_short_display": [
+      {
+        "site-id": "10"
+      }
+    ],
+    "eventname": "rulename",
+    "rulename": "site_up",
+    "type": "site_up",
+    "component": "OMP",
+    "severity": "Medium",
+    "severity_number": 3,
+    "entry_time": 1709886607942,
+    "receive_time": 1709886588471,
+    "rule_name_display": "OMP_Site_Up",
+    "uuid": "4934af91-c06d-4a18-8b7e-da5ca7406433",
+    "active": false,
+    "acknowledged": false,
+    "possible_causes": [
+      "Trying to determine possible root causes"
+    ],
+    "consumed_events": [
+      {
+        "eventname": "omp-peer-state-change",
+        "peer-new-state": "up",
+        "eventId": "bc51946f-2673-4995-be88-5532cd0b4929",
+        "builtBy": "LocalAlarmsGenerator",
+        "component": "OMP",
+        "system-ip-in-vmanage": "",
+        "entry_time": 2628471,
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10",
+        "peer": "1.1.0.2"
+      }
+    ],
+    "site_id": "10",
+    "devices": [
+      {
+        "system-ip": "1.1.10.1"
+      }
+    ]
+  }

@@ -1,0 +1,52 @@
+{
+    "suppressed": false,
+    "message": "All BFD sessions for the site are down",
+    "values": [
+      {
+        "site-id": "10"
+      }
+    ],
+    "values_short_display": [
+      {
+        "site-id": "10"
+      }
+    ],
+    "eventname": "rulename",
+    "rulename": "site_down",
+    "type": "site_down",
+    "component": "BFD",
+    "severity": "Critical",
+    "severity_number": 1,
+    "entry_time": 1709885660573,
+    "receive_time": 1709885642565,
+    "rule_name_display": "BFD_Site_Down",
+    "uuid": "e9835a50-46b3-4ee3-bd93-8685f01ea12b",
+    "active": true,
+    "acknowledged": false,
+    "possible_causes": [
+      "Trying to determine possible root causes"
+    ],
+    "consumed_events": [
+      {
+        "eventname": "bfd-state-change",
+        "new-state": "down",
+        "eventId": "dbefc53f-e033-4994-b71c-34acc897ab78",
+        "builtBy": "EventDataCollector",
+        "component": "BFD",
+        "severity-level": "major",
+        "system-ip-in-vmanage": "1.1.10.1",
+        "entry_time": 1709885642404,
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10",
+        "local-color": "biz-internet",
+        "remote-system-ip": "1.1.0.40",
+        "remote-color": "biz-internet"
+      }
+    ],
+    "site_id": "10",
+    "devices": [
+      {
+        "system-ip": "1.1.10.1"
+      }
+    ]
+  }

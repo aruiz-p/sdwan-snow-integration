@@ -1,0 +1,122 @@
+{
+    "suppressed": false,
+    "message": "All Control connections for the site are down",
+    "values": [
+      {
+        "site-id": "300"
+      }
+    ],
+    "values_short_display": [
+      {
+        "site-id": "300"
+      }
+    ],
+    "eventname": "rulename",
+    "rulename": "site_down",
+    "type": "site_down",
+    "component": "Control",
+    "severity": "Critical",
+    "severity_number": 1,
+    "entry_time": 1710143631443,
+    "receive_time": 1710143601372,
+    "rule_name_display": "Control_Site_Down",
+    "uuid": "e4d5cf66-81ac-4b26-a21b-778724326e80",
+    "active": true,
+    "acknowledged": false,
+    "possible_causes": [
+      "Trying to determine possible root causes"
+    ],
+    "consumed_events": [
+      {
+        "eventname": "control-connection-state-change",
+        "new-state": "down",
+        "eventId": "d5415bb8-a076-47dc-9661-ad04425eab5b",
+        "builtBy": "EventDataCollector",
+        "component": "Control",
+        "severity-level": "major",
+        "vmanage-system-ip": "1.1.30.1",
+        "entry_time": 1710143601321,
+        "system-ip": "1.1.30.1",
+        "host-name": "Site300-cE1",
+        "personality": "vedge",
+        "src-color": "biz-internet",
+        "peer-system-ip": "1.1.1.3",
+        "peer-vmanage-system-ip": "1.1.1.3",
+        "remote-color": "default"
+      },
+      {
+        "eventname": "control-connection-state-change",
+        "new-state": "down",
+        "eventId": "f2b24ba4-0e70-440a-bdf8-da417a860edc",
+        "builtBy": "EventDataCollector",
+        "component": "Control",
+        "severity-level": "major",
+        "vmanage-system-ip": "1.1.30.1",
+        "entry_time": 1710143601367,
+        "system-ip": "1.1.30.1",
+        "host-name": "Site300-cE1",
+        "personality": "vedge",
+        "src-color": "mpls",
+        "peer-system-ip": "1.1.1.4",
+        "peer-vmanage-system-ip": "1.1.1.4",
+        "remote-color": "default"
+      },
+      {
+        "eventname": "control-connection-state-change",
+        "new-state": "down",
+        "eventId": "388ad81e-2898-4875-a62f-6eac20e8e764",
+        "builtBy": "EventDataCollector",
+        "component": "Control",
+        "severity-level": "major",
+        "vmanage-system-ip": "1.1.30.1",
+        "entry_time": 1710143601321,
+        "system-ip": "1.1.30.1",
+        "host-name": "Site300-cE1",
+        "personality": "vedge",
+        "src-color": "biz-internet",
+        "peer-system-ip": "1.1.1.4",
+        "peer-vmanage-system-ip": "1.1.1.4",
+        "remote-color": "default"
+      },
+      {
+        "eventname": "control-connection-state-change",
+        "new-state": "down",
+        "eventId": "f83c4371-d00f-42ce-99db-bd17e1185a4d",
+        "builtBy": "EventDataCollector",
+        "component": "Control",
+        "severity-level": "major",
+        "vmanage-system-ip": "1.1.30.1",
+        "entry_time": 1710143601367,
+        "system-ip": "1.1.30.1",
+        "host-name": "Site300-cE1",
+        "personality": "vedge",
+        "src-color": "mpls",
+        "peer-system-ip": "1.1.1.3",
+        "peer-vmanage-system-ip": "1.1.1.3",
+        "remote-color": "default"
+      },
+      {
+        "eventname": "control-connection-state-change",
+        "new-state": "down",
+        "eventId": "7fd66fb1-f221-4a02-84de-eb050baaffee",
+        "builtBy": "EventDataCollector",
+        "component": "Control",
+        "severity-level": "major",
+        "vmanage-system-ip": "1.1.30.1",
+        "entry_time": 1710143601365,
+        "system-ip": "1.1.30.1",
+        "host-name": "Site300-cE1",
+        "personality": "vedge",
+        "src-color": "mpls",
+        "peer-system-ip": "1.1.1.1",
+        "peer-vmanage-system-ip": "1.1.1.1",
+        "remote-color": "default"
+      }
+    ],
+    "site_id": "300",
+    "devices": [
+      {
+        "system-ip": "1.1.30.1"
+      }
+    ]
+  }

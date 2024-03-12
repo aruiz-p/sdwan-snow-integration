@@ -1,0 +1,41 @@
+{
+    "suppressed": false,
+    "devices": [
+      {
+        "system-ip": "1.1.30.1"
+      }
+    ],
+    "eventname": "omp-state-change",
+    "type": "omp-state-change",
+    "rulename": "omp-state-change",
+    "component": "OMP",
+    "entry_time": 1710143373887,
+    "statcycletime": 1710143374749,
+    "message": "OMP state changed",
+    "severity": "Medium",
+    "severity_number": 3,
+    "uuid": "d5cc7fe9-5b06-4e57-86d4-38a71838714b",
+    "values": [
+      {
+        "system-ip": "1.1.30.1",
+        "new-state": "up",
+        "host-name": "Site300-cE1"
+      }
+    ],
+    "rule_name_display": "OMP_State_Change",
+    "receive_time": 1710143373829,
+    "values_short_display": [
+      {
+        "host-name": "Site300-cE1",
+        "system-ip": "1.1.30.1",
+        "new-state": "up"
+      }
+    ],
+    "system_ip": "1.1.30.1",
+    "host_name": "Site300-cE1",
+    "acknowledged": false,
+    "cleared_events": [
+      "66f8bcfc-62d7-4fe2-ab94-d9c783b04e03"
+    ],
+    "active": false
+  }

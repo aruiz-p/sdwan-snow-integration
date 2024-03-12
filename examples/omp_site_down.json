@@ -1,0 +1,50 @@
+{
+    "suppressed": false,
+    "message": "All OMP sessions for the site are down",
+    "values": [
+      {
+        "site-id": "10"
+      }
+    ],
+    "values_short_display": [
+      {
+        "site-id": "10"
+      }
+    ],
+    "eventname": "rulename",
+    "rulename": "site_down",
+    "type": "site_down",
+    "component": "OMP",
+    "severity": "Critical",
+    "severity_number": 1,
+    "entry_time": 1709886381341,
+    "receive_time": 1709886352132,
+    "rule_name_display": "OMP_Site_Down",
+    "uuid": "02e81ac7-878a-4bb0-bd20-f808fdce21fc",
+    "active": true,
+    "acknowledged": false,
+    "possible_causes": [
+      "Trying to determine possible root causes"
+    ],
+    "consumed_events": [
+      {
+        "eventname": "omp-peer-state-change",
+        "peer-new-state": "init",
+        "eventId": "9468345a-4cda-47d9-9d20-d604bb76c2de",
+        "builtBy": "EventDataCollector",
+        "component": "OMP",
+        "severity-level": "major",
+        "system-ip-in-vmanage": "1.1.10.1",
+        "entry_time": 1709886352083,
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10",
+        "peer": "1.1.0.2"
+      }
+    ],
+    "site_id": "10",
+    "devices": [
+      {
+        "system-ip": "1.1.10.1"
+      }
+    ]
+  }

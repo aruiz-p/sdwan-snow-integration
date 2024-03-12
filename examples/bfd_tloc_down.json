@@ -1,0 +1,60 @@
+{
+    "suppressed": true,
+    "message": "All BFD sessions for the tloc are down",
+    "values": [
+      {
+        "system-ip": "1.1.10.1",
+        "color": "biz-internet",
+        "host-name": "BR10",
+        "site-id": "10"
+      }
+    ],
+    "values_short_display": [
+      {
+        "system-ip": "1.1.10.1",
+        "color": "biz-internet",
+        "host-name": "BR10"
+      }
+    ],
+    "eventname": "rulename",
+    "rulename": "tloc_down",
+    "type": "tloc_down",
+    "component": "BFD",
+    "severity": "Major",
+    "severity_number": 2,
+    "entry_time": 1709885645193,
+    "receive_time": 1709885642565,
+    "rule_name_display": "BFD_TLOC_Down",
+    "uuid": "09adfc18-6e51-4441-9e02-bc13fb13408f",
+    "active": true,
+    "acknowledged": false,
+    "possible_causes": [
+      "Trying to determine possible root causes"
+    ],
+    "suppressed_by": "{\"system-ip\":\"1.1.10.1\",\"component\":\"BFD\"}",
+    "consumed_events": [
+      {
+        "eventname": "bfd-state-change",
+        "new-state": "down",
+        "eventId": "dbefc53f-e033-4994-b71c-34acc897ab78",
+        "builtBy": "EventDataCollector",
+        "component": "BFD",
+        "severity-level": "major",
+        "system-ip-in-vmanage": "1.1.10.1",
+        "entry_time": 1709885642404,
+        "system-ip": "1.1.10.1",
+        "host-name": "BR10",
+        "local-color": "biz-internet",
+        "remote-system-ip": "1.1.0.40",
+        "remote-color": "biz-internet"
+      }
+    ],
+    "system_ip": "1.1.10.1",
+    "host_name": "BR10",
+    "site_id": "10",
+    "devices": [
+      {
+        "system-ip": "1.1.10.1"
+      }
+    ]
+  }

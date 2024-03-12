@@ -1,0 +1,41 @@
+{
+    "suppressed": false,
+    "devices": [
+      {
+        "system-ip": "1.1.10.1"
+      }
+    ],
+    "eventname": "interface-state-change",
+    "type": "interface-state-change",
+    "rulename": "interface-state-change",
+    "component": "VPN",
+    "entry_time": 1709277482508,
+    "statcycletime": 1709277482508,
+    "message": "The interface oper-state changed to up",
+    "severity": "Medium",
+    "severity_number": 3,
+    "uuid": "5486325c-d189-4467-9b5a-16acb1f28ec9",
+    "values": [
+      {
+        "host-name": "Router",
+        "system-ip": "1.1.10.1",
+        "if-name": "GigabitEthernet2",
+        "new-state": "up",
+        "vpn-id": "0"
+      }
+    ],
+    "rule_name_display": "Interface_State_Change",
+    "receive_time": 1708843265147,
+    "values_short_display": [
+      {
+        "host-name": "Router",
+        "system-ip": "1.1.10.1",
+        "if-name": "GigabitEthernet2",
+        "new-state": "up"
+      }
+    ],
+    "system_ip": "1.1.10.1",
+    "host_name": "Router",
+    "acknowledged": false,
+    "active": false
+  }

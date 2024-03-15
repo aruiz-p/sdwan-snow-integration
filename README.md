@@ -22,6 +22,6 @@ SNOW_INSTANCE="<YOUR_INSTANCE>"
 ```bash
 go run main.go servicenow-functions.go
 ```
-3. Trigger a webhook event from vManage.
+3. Trigger a webhook event from vManage. See images [**here**](https://netwithalex.blog/tracking-sd-wan-incidents-with-service-now/)
 
 

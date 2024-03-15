@@ -15,6 +15,7 @@ import (
 
 func createIncident(data map[string]interface{}) error {
 
+	// Retrieve information to open incident
 	issueId := data["uuid"].(string)
 	ruleName := data["rule_name_display"].(string)
 	title := data["message"].(string)
@@ -23,7 +24,7 @@ func createIncident(data map[string]interface{}) error {
 	device := ". Device " + data["host_name"].(string) +
 		", System-ip " + data["system_ip"].(string)
 
-	// Construct JSON payload for creating incident
+	// Construct JSON payload for creating incident in SNOW
 	incidentData := map[string]interface{}{
 		"category":          "network",
 		"caller_id":         "vManage",
@@ -58,16 +59,33 @@ func createIncident(data map[string]interface{}) error {
 	}
 	defer resp.Body.Close()
 
-	if resp.StatusCode != http.StatusCreated {
-		// Read response body to get more detailed error message
-		responseBody, err := io.ReadAll(resp.Body)
-		if err != nil {
-			return fmt.Errorf("error reading response body: %v", err)
-		}
-		return fmt.Errorf("error creating incident. Status code: %d, Response body: %s", resp.StatusCode, responseBody)
+	body, err := io.ReadAll(resp.Body)
+
+	if err != nil {
+		return fmt.Errorf("error reading response body: %v", err)
+	}
+	// Read response
+	var incidentResponse map[string]interface{}
+	err = json.Unmarshal(body, &incidentResponse)
+	if err != nil {
+		return fmt.Errorf("error decoding JSON response: %v", err)
 	}
 
-	fmt.Printf("Incident for uuid %s was created", issueId)
+	if resp.StatusCode != http.StatusCreated {
+		// Read response body to get more detailed error message
+		return fmt.Errorf("error creating incident. Status code: %d, Response body: %s", resp.StatusCode, body)
+
+	}
+
+	// Check if the result exists
+	result, ok := incidentResponse["result"].(map[string]interface{})
+	if !ok {
+		return fmt.Errorf("missing or invalid result field in the response")
+	}
+
+	incidentId := result["sys_id"].(string)
+
+	fmt.Printf("Incident %s was created", incidentId)
 
 	return nil
 }
@@ -211,17 +229,18 @@ func getIncidentWoutId(ruleName, sysIp string, openTime float64) (bool, string, 
 			// Convert time.Time object to Unix epoch time in milliseconds
 			snowTimeEpoch := parsedTime.UnixNano() / int64(time.Millisecond)
 			webhookTimeEpoch := int64(openTime)
-
-			diffMillis := snowTimeEpoch - webhookTimeEpoch
+			// Calculate how many hours ago incident was opened
+			diffMillis := webhookTimeEpoch - snowTimeEpoch
 			diffHours := float64(diffMillis) / (1000 * 60 * 60)
 
+			// Convert Rule Name to look on Service Now responses
 			newRuleName := strings.Replace(ruleName, "Up", "Down", -1)
 
-			// Compare received UUID with SNOW uuid description
+			// Compare Rule Name, system ip and time
 			if strings.Contains(description, newRuleName) &&
 				strings.Contains(description, sysIp) &&
-				diffHours < 24 {
-				// If uuid is found, return sys_id
+				diffHours < 12 {
+
 				sys_id, ok := incidentMap["sys_id"].(string)
 				if !ok {
 					continue
